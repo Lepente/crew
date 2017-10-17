@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.ccs">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+    body {
+        font-family: 'Roboto', sans-serif;
+        height: 100%;
+    }
+    .background-video {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1000;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+    }
+    #video {
+      position: absolute;
+      top: 50%; left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      display: block;
+      transform: translate(-50%, -50%);
+    }
+    .content {
+      position: relative;
+      z-index: 1000;
+      width: 100%;
+      height: 100%;
+    }
+    .content h1 {
+      text-align: center;
+      font-size: 150px;
+      color: white;
+      padding-top: 20%;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-video">
+    <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted">
+      <source src="background-video.mp4" type="video/mp4">
+  </div>
+  <div class="content container-fluid">
+      <h1>The sds Crew</h1>
+  </div>
+</body>
+</html>
