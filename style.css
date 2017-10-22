@@ -75,4 +75,8 @@ body {
     .header-content h1 {
       font-size: 50px;
     }
+    .container {
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
 }
