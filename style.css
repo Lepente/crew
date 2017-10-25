@@ -55,6 +55,7 @@ body {
 }
 
 .header-content h1 {
+  position: relative;
   font-size: 100px;
   margin-bottom: 0;
   text-align: center;
@@ -64,6 +65,7 @@ body {
 .section {
   padding: 20px 0;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .section-a {
@@ -112,8 +114,9 @@ h4 {
   opacity: 0.35;
   width: 75%;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
+
 
 @media(max-width:960px){
     .container {
