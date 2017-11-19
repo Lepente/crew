@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -14,8 +14,11 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
+     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
   <body>
         <header class="v-header container">
@@ -23,7 +26,7 @@
              <video src="back.MOV" autoplay="true" muted="muted" loop="true" ></video>
            </div>
            <div class="header-overlay"></div>
-           <div class="header-content">
+           <div class="header-content" id="title">
              <h1>Lensation Crew</h1>
            </div>
         </header>
@@ -42,39 +45,50 @@
 
         <div class="part part-b">
             <div class="divider container-fluid"></div>
-          <div class="container">
-            <h1>Our Work</h1>
-          </div>
-          <iframe width="100%" height="480" src="https://www.youtube.com/embed/g3fqSfH8eGM" frameborder="0" gesture="media" allowfullscreen></iframe>
-          <div class="container">
-            <button type="button" class="btn btn-outline-light" name="button">Members</button>
+          <div class="container-fluid">
+            <h1  class="title" style="text-align:center">Our Work</h1>
+            <div class="row">
+              <div class="col">
+                <img class="pictures img-responsive" src="images/taj.JPG" alt="">
+              </div>
+              <div class="col">
+
+              </div>
+            </div>
           </div>
         </div>
 
+        <div class="divider container-fluid"></div>
+
+        <div class="part mem">
+          <div class="container">
+            <h1>Members</h1>
+          </div>
+        </div>
         <div class="part members">
           <div class="container">
             <div class="row">
                 <div class="col">
                   <div class="box">
-                    <img src="images/balint.JPG" alt="img-responsive">
+                    <img src="images/balo.JPG" class="img" alt="img-responsive">
                   <h4>Anghel Bálint</h4>
                 </div>
                 </div>
                 <div class="col">
                   <div class="box">
-                    <img src="images/tibi.jpg" alt="img-responsive">
+                    <img src="images/tibi.jpg" class="img" alt="img-responsive">
                   <h4>Cseke Tibor</h4>
                 </div>
               </div>
                 <div class="col">
                   <div class="box">
-                    <img src="images/akos.jpg" alt="img-responsive">
+                    <img src="images/akos.jpg" class="img" alt="img-responsive">
                   <h4>Molnár Ákos</h4>
                 </div>
               </div>
                 <div class="col">
                   <div class="box">
-                    <img src="images/zonda.JPG" alt="img-responsive">
+                    <img src="images/zonda.JPG" class="img" alt="img-responsive">
                   <h4>Zonda Zsolt</h4>
                 </div>
               </div>
@@ -85,25 +99,25 @@
             <div class="row">
               <div class="col">
                 <div class="box">
-                  <img src="images/diri.JPG" alt="img-responsive">
+                  <img src="images/diri.JPG" class="img" alt="img-responsive">
                 <h4>Dumitrascu Darius</h4>
               </div>
               </div>
               <div class="col">
                 <div class="box">
-                  <img src="images/zoli.JPG" alt="img-fluid">
+                  <img src="images/zoli.JPG" class="img" alt="img-fluid">
                 <h4>Pitik Zoltán</h4>
               </div>
             </div>
               <div class="col">
                 <div class="box">
-                  <img src="images/albi.jpg" alt="img-fluid">
+                  <img src="images/albert.JPG" class="img" alt="img-fluid">
                 <h4>Birta Albert</h4>
               </div>
               </div>
               <div class="col">
                 <div class="box">
-                  <img src="images/lepi.JPG" alt="img-responsive">
+                  <img src="images/lepi.JPG" class="img" alt="img-responsive">
                 <h4>Molnár Levente</h4>
               </div>
             </div>
@@ -111,26 +125,17 @@
         </div>
       </div>
 
+        <div class="divider2">
+
+        </div>
       <div class="part footer">
         <div class="container-fluid">
           <div class="row">
-          <div class="col fter">
-            <h4>Social Sites</h4>
-            <ul>
-              <li><a href="https://www.facebook.com/LensationCrewMedia/"> <i class="fa fa-facebook-official icons"> Facebook</i> </a></li>
-              <li><a href="https://www.instagram.com/crewlensation/"> <i class="fa fa-instagram icons"> Instagram</i> </a></li>
-              <li><a href="https://www.youtube.com/channel/UC-JCgfargK5N_HqJWpax9Ag/featured"> <i class="fa fa-youtube-play icons"> YouTube</i> </a></li>
-            </ul>
+          <div class="col lens">
+            <h4>Lensation Crew</h4>
           </div>
-          <div class="col fter">
-            <h4>Contact</h4>
-            <h6>Email: crewlensation@gmail.com</h6>
-          </div>
-          </div>
-          <div class="divider container-fluid"></div>
-          <div class="row heh">
-            <div class="col">
-              <p>All rights reserved. | Made by Molnár Levente</p>
+            <div class="col cop">
+              <p style="padding-top:1.5rem;font-size:12px;">Copyright &copy; 2017 Lensation Crew All Rights Reserved. | Made by Molnár Levente</p>
             </div>
           </div>
         </div>
@@ -139,9 +144,66 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script type="text/javascript">
       $(document).ready(function(){
-          $(".btn").click(function(){
-              $(".members").slideToggle();
+
+          window.sr = ScrollReveal({
+            mobile: true,
+            reset:false
           });
+
+          sr.reveal('.part-a', {
+            duration: 2000,
+          });
+
+          sr.reveal('.header-content', {
+            duration: 1500,
+            origin:'bottom',
+            reset: true,
+            distance:'200px',
+            scale:0.7,
+            easing: 'ease-in-out'
+          });
+
+          sr.reveal('.lens' , {
+            duration: 1500,
+            viewFactor: 0.1,
+            origin:'left',
+            distance: '500px',
+            scale:0.5
+          });
+
+          sr.reveal('.cop', {
+            duration: 1500,
+            viewFactor: 0.1,
+            origin:'right',
+            distance: '500px',
+            scale:0.5
+          });
+
+          sr.reveal('.title', {
+            duration: 1500,
+            viewFactor: 0.1,
+          });
+
+          sr.reveal('.img', {
+            duration: 1500,
+            origin: 'top',
+            distance: '50px'
+          }, 1);
+
+          sr.reveal('h4', {
+            duration: 1500,
+            origin: 'top',
+            distance: '50px'
+          });
+
+          sr.reveal('.pictures', {
+            duration: 1500,
+            viewFactor: 0.3,
+            origin:'left',
+            distance:'300px',
+            easing: 'ease-in-out'
+          });
+
       });
       </script>
   </body>
