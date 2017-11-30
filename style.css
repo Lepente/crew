@@ -10,6 +10,20 @@ body {
   overflow-x: hidden;
 }
 
+nav {
+  position: relative;
+  z-index: 3;
+}
+
+.shrink {
+  background: rgba(0,0,0,0.2);
+  color: #000;
+}
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+}
+
 .v-header {
   height: 100vh;
   display: flex;
@@ -85,6 +99,11 @@ h1 {
   align-items: center;
   text-align: center;
   margin-top: 1rem;
+}
+
+.awards {
+  background: #fff;
+  color: #333;
 }
 
 
