@@ -27,7 +27,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
@@ -162,17 +162,18 @@
       $(document).ready(function(){
 
           window.sr = ScrollReveal({
-            mobile: true,
             reset:false
           });
 
           sr.reveal('nav', {
             duration: 1000,
             origin: 'top',
+            mobile: true,
           });
 
           sr.reveal('.part-a', {
             duration: 2000,
+            mobile: true,
           });
 
           sr.reveal('.header-content', {
@@ -181,7 +182,8 @@
             reset: true,
             distance:'200px',
             scale:0.7,
-            easing: 'ease-in-out'
+            easing: 'ease-in-out',
+            mobile: true,
           });
 
           sr.reveal('.lens' , {
@@ -189,7 +191,8 @@
             viewFactor: 0.1,
             origin:'left',
             distance: '500px',
-            scale:0.5
+            scale:0.5,
+            mobile: true,
           });
 
           sr.reveal('.cop', {
@@ -197,24 +200,28 @@
             viewFactor: 0.1,
             origin:'right',
             distance: '500px',
-            scale:0.5
+            scale:0.5,
+            mobile: true,
           });
 
           sr.reveal('.title', {
             duration: 1500,
             viewFactor: 0.1,
+            mobile: true,
           });
 
           sr.reveal('.img', {
             duration: 1500,
             origin: 'top',
-            distance: '50px'
-          }, 1);
+            distance: '50px',
+            mobile: true,
+          });
 
           sr.reveal('h4', {
             duration: 1500,
             origin: 'top',
-            distance: '50px'
+            distance: '50px',
+            mobile: true,
           });
 
           sr.reveal('.pictures', {
@@ -222,21 +229,21 @@
             viewFactor: 0.3,
             origin:'left',
             distance:'300px',
-            easing: 'ease-in-out'
+            easing: 'ease-in-out',
+            mobile: true,
           });
 
           $(window).scroll(function() {
-            if ($(document).scrollTop() > 800) {
+            if ($(document).scrollTop() > 700) {
               $(".navbar").removeClass("navbar-dark");
-              $(".navbar").removeClass("bg-transparent");
+
               $("nav").addClass("navbar-light");
-              $("nav").addClass("bg-light");
+
             }
             else {
               $(".navbar").removeClass("navbar-light");
-              $("nav").removeClass("bg-light");
               $(".navbar").addClass("navbar-dark");
-              $(".navbar").addClass("bg-transparent");
+
             }
           });
 

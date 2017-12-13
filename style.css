@@ -197,6 +197,21 @@ h4 {
     }
 }
 
+@media(max-width:720px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .header-content h1 {
+    font-size: 60px;
+    position: relative;
+  }
+  .img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
 @media(max-width:576px) {
     .header-content h1 {
       font-size: 35px;
