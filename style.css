@@ -81,7 +81,8 @@ h1 {
 }
 
 .part {
-  padding: 20px 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   align-items: center;
   font-family: 'Poppins', sans-serif;
 }
@@ -98,7 +99,6 @@ h1 {
 .members {
   align-items: center;
   text-align: center;
-  margin-top: 1rem;
 }
 
 .awards {
@@ -142,8 +142,8 @@ h1 {
 }
 
 h4 {
+  padding-bottom: 3rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .divider {
@@ -151,7 +151,6 @@ h4 {
   background: grey;
   opacity: 0.35;
   width: 75%;
-  margin-bottom: 2rem;
 }
 
 .divider2 {
@@ -160,11 +159,12 @@ h4 {
   opacity: 0.35;
   width: 100%;
   margin-bottom: 2
+  padding-bottom: 2rem;
 }
 
 .icons {
   color: #333;
-  margin: 5px;
+  margin: 10px;
   font-size: 20px;
 }
 
@@ -199,6 +199,7 @@ h4 {
 
 @media(max-width:720px) {
   .container {
+    max-width: 720px;
     padding-right: 3rem;
     padding-left: 3rem;
   }
@@ -218,6 +219,7 @@ h4 {
       position: relative;
     }
     .container {
+      max-width: 576px;
       padding-right: 3rem;
       padding-left: 3rem;
     }
