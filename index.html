@@ -44,7 +44,7 @@
            </div>
         </header>
 
-        <div id="about" class="part part-a">
+        <div id="about" class="part">
           <div class="container">
             <h1>About</h1>
             <p>A group of students who want to capture every moment.</p>
@@ -58,13 +58,9 @@
 
         <div class="divider container-fluid"></div>
 
-        <div id="members" class="part mem">
+        <div id="members" class="part">
           <div class="container">
-            <h1>Members</h1>
-          </div>
-        </div>
-        <div class="part members">
-          <div class="container">
+              <h1>Members</h1>
             <div class="row">
                 <div class="col">
                   <div class="box">
@@ -103,13 +99,13 @@
               </div>
               <div class="col">
                 <div class="box">
-                  <img src="images/zoli.JPG" class="img" alt="img-fluid">
+                  <img src="images/zoli.JPG" class="img" alt="img-responsive">
                 <h4>Pitik Zoltán</h4>
               </div>
             </div>
               <div class="col">
                 <div class="box">
-                  <img src="images/albert.JPG" class="img" alt="img-fluid">
+                  <img src="images/albert.JPG" class="img" alt="img-responsive">
                 <h4>Birta Albert</h4>
               </div>
               </div>
@@ -134,11 +130,12 @@
         </div>
 
         <div class="divider2"></div>
+
       <div class="part footer">
         <div class="container-fluid">
           <div class="row">
           <div class="col lens">
-            <h3>Lensation Crew</h3>
+            <h3 style="padding-top:0.5rem">Lensation Crew</h3>
           </div>
             <div class="col cop">
               <p style="padding-top:1rem;font-size:12px;">Copyright &copy; 2017 Lensation Crew All Rights Reserved. | Made by Molnár Levente</p>
@@ -167,7 +164,7 @@
 
 
           $(window).scroll(function() {
-            if ($(document).scrollTop() > 700) {
+            if ($(document).scrollTop() > 300) {
               $(".navbar").removeClass("navbar-dark");
 
               $("nav").addClass("navbar-light");
