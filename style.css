@@ -184,8 +184,7 @@ h4 {
     width: 70px;
   }
   .bubble {
-    position: fixed;
-    z-index: 0;
+    display: none;
   }
 }
 
@@ -216,8 +215,7 @@ h4 {
     }
 
     .bubble {
-      position: fixed;
-      z-index: 0;
+      display: none;
     }
 
 }
