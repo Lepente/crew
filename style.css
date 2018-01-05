@@ -211,4 +211,9 @@ h4 {
       width: 80px;
     }
 
+    .bubble {
+      position: fixed;
+      z-index: 0;
+    }
+
 }
