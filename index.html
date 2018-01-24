@@ -16,10 +16,17 @@
   <body>
 
       <nav class="nav">
-        <h3>Lensation Crew</h3>
+        <a href="#home"><h3>Lensation Crew</h3></a>
         <ul>
-          <li id="About">About</li>
-          <li>Members</li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
         </ul>
       </nav>
 
@@ -29,8 +36,8 @@
              <h1>Lensation Crew</h1>
            </div>
         </header>
-
-        <div id="about" class="part">
+        <div id="about"></div>
+        <div class="part">
           <div class="container">
             <h1>About</h1>
             <p>A group of students who want to capture every moment.</p>
@@ -44,9 +51,10 @@
 
         <div class="divider container-fluid"></div>
 
-        <div id="members" class="part">
+        <div id="members"></div>
+        <div class="part">
           <div class="container">
-              <h1>Members</h1>
+              <h1 style="padding-bottom:1rem;">Members</h1>
             <div class="row">
                 <div class="col">
                   <div class="box">
@@ -147,23 +155,31 @@
             mobile: true,
           });
 
-          /**
           $(window).scroll(function() {
-            if ($(document).scrollTop() > 100) {
-              $(".navbar").removeClass("navbar-dark");
-
-              $("nav").addClass("navbar-light");
+            if ($(document).scrollTop() > 300) {
+              $(".nav").css({
+                'color' : '#333'
+              })
+              $(".nav").css({
+                'background-color' : 'white'
+              })
+              $("a").css({
+                'color' : '#333'
+              })
 
             }
             else {
-              $(".navbar").removeClass("navbar-light");
-              $(".navbar").addClass("navbar-dark");
-
+              $(".nav").css({
+                'color' : '#fff'
+              })
+              $(".nav").css({
+                'background-color' : 'transparent'
+              })
+              $("a").css({
+                'color' : '#fff'
+              })
             }
           });
-           */
-
-
 
           $(window).scroll(function(){
             var wScroll = $(this).scrollTop();
@@ -171,7 +187,7 @@
               'transform' : 'translate(0px, '+ wScroll /2 +'%)'
             })
           });
-      });
+        });
       </script>
       <script
         src="https://code.jquery.com/jquery-3.2.1.js"

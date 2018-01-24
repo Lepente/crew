@@ -14,18 +14,28 @@ body {
 
 .nav {
   color: #fff;
-  z-index: 6;
+  z-index: 100;
   position: fixed;
   display: grid;
   grid-template-columns: 1fr auto auto;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   align-items: center;
-  padding-top: 1rem;
 }
 
 .nav h3 {
   padding-left: 1rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 ul {
@@ -33,13 +43,12 @@ ul {
   grid-gap: 30px;
   padding-right: 1rem;
   padding-top: 1rem;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   align-self: center;
 }
 
 li {
   display: inline;
-  color: #fff;
 }
 
 .header {
@@ -49,7 +58,7 @@ li {
   justify-content: center;
   align-items: center;
   color: #fff;
-  background-image: url('images/header.JPG');
+  background-image: url("images/header.jpg");
   background-size: cover;
   background-attachment: fixed;
   z-index: 5;
@@ -83,10 +92,14 @@ li {
   display: flex;
 }
 
+#about, #members {
+  height: 30px;
+}
+
 .part {
   position: relative;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   align-items: center;
   font-family: 'Poppins', sans-serif;
   background: #fff;
@@ -166,10 +179,6 @@ h4 {
       padding-right: 3rem;
       padding-left: 3rem;
     }
-    .bubble {
-      position: fixed;
-      z-index: 0;
-    }
 }
 
 @media(max-width:720px) {
@@ -186,8 +195,8 @@ h4 {
     height: 70px;
     width: 70px;
   }
-  .bubble {
-    display: none;
+  h3 {
+    font-size: 20px;
   }
 }
 
@@ -216,9 +225,11 @@ h4 {
       height: 80px;
       width: 80px;
     }
-
-    .bubble {
-      display: none;
+    h3 {
+      font-size: 15px;
     }
 
+    li {
+      font-size: 10px;
+    }
 }
