@@ -29,12 +29,13 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #fff;
+  transition: 1s;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  transition: 1s;
   color: #fff;
 }
 
@@ -230,7 +231,7 @@ h4 {
 
 @media(max-width:576px) {
     .header-content h1 {
-      font-size: 35px;
+      font-size: 30px;
       position: relative;
     }
     .container {
@@ -247,14 +248,14 @@ h4 {
       width: 80px;
     }
     h3 {
-      font-size: 15px;
-    }
-
-    li {
       font-size: 10px;
     }
 
+    li {
+      font-size: 12px;
+    }
+
     .top h1 {
-      font-size: 30px;
+      font-size: 20px;
     }
 }
