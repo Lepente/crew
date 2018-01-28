@@ -144,15 +144,6 @@ h4 {
   z-index: 100;
 }
 
-.divider2 {
-  height: 1px;
-  background: grey;
-  opacity: 0.35;
-  width: 100%;
-  margin-bottom: 2;
-  padding-bottom: 2rem;
-}
-
 .icons {
   color: #333;
   margin: 10px;
@@ -238,9 +229,6 @@ h4 {
       max-width: 576px;
       padding-right: 3rem;
       padding-left: 3rem;
-    }
-    .section-members h1 {
-      padding-bottom: 1rem;
     }
 
     .img {
