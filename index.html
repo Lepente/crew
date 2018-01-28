@@ -155,9 +155,6 @@
             if ($(document).scrollTop() > 300) {
               $(".nav").css({
                 'color' : '#333',
-                'transition' : '0.5s',
-              })
-              $(".nav").css({
                 'background-color' : 'white',
                 'transition' : '0.5s',
               })
@@ -169,10 +166,8 @@
             }
             else {
               $(".nav").css({
-                'color' : '#fff'
-              })
-              $(".nav").css({
-                'background-color' : 'transparent'
+                'color' : '#fff',
+                'background-color' : 'transparent',
               })
               $("a").css({
                 'color' : '#fff'
@@ -180,12 +175,7 @@
             }
           });
 
-          $(window).scroll(function(){
-            var wScroll = $(this).scrollTop();
-            $('.logo').css({
-              'transform' : 'translate(0px, '+ wScroll /2 +'%)'
-            })
-          });
+          
         });
       </script>
       <script
