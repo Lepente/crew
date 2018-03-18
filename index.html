@@ -14,16 +14,16 @@
       <nav class="nav">
         <a href="#home"><h3>Lensation Crew</h3></a>
         <div class="icons">
-        <a href="https://www.facebook.com/LensationCrewMedia/"><img class="icon" src="images/facebook.svg" alt="Facebook Link"></a>
-        <a href="https://www.youtube.com/channel/UC-JCgfargK5N_HqJWpax9Ag/videos"><img class="icon" src="images/youtube.svg" alt="YouTube Link"></a>
-        <a href="https://www.instagram.com/crewlensation/"><img class="icon" src="images/insta.svg" alt="Instagram Link"></a>
+        <a target="_blank" href="https://www.facebook.com/LensationCrewMedia/"><img class="icon" src="images/facebook.svg" alt="Facebook Link"></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UC-JCgfargK5N_HqJWpax9Ag/videos"><img class="icon" src="images/youtube.svg" alt="YouTube Link"></a>
+        <a target="_blank" href="https://www.instagram.com/crewlensation/"><img class="icon" src="images/insta.svg" alt="Instagram Link"></a>
         </div>
         <ul>
           <li>
             <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="#gallery">GALLERY</a>
+            <a href="gallery.html">GALLERY</a>
           </li>
         </ul>
       </nav>
@@ -45,9 +45,9 @@
       <div class="photo-holder">
         <div class="photos">
           <div class="grid">
-            <img src="images/boti3.jpg" alt="">
-            <img src="images/csilag1.jpg" alt="">
-            <img class="crete" src="images/Crete1.jpg" alt="">
+            <img src="images/boti3.jpg" alt="Picture">
+            <img src="images/csilag1.jpg" alt="Picture">
+            <img class="crete" src="images/Crete1.jpg" alt="Picture">
           </div>
           <div class="view-all"><a href="gallery.html">VIEW ALL PHOTOS</a></div>
         </div>
@@ -70,13 +70,11 @@
 
       <div class="content-holder about">
         <section>
-          Egy-egy vizsgajegy lehet jobb, de hosszútávon felejtés lesz a vége. Az agy működéséhez, így a tanuláshoz is igen sok oxigénre van szükség. A cigarettázással a szervezetbe kerülő szén-monoxid viszont megszállja az oxigén szállító hemoglobint. Az agy így kevesebb friss, oxigénben dús vérhez jut, ami rontja működését, ezáltal a koncentrációs képességet. A dohányzás hatással van a rövid távú memóriára, így például egy átdohányzott és áttanult éjszaka után lehet egy jó vizsgajegyet behúzni, de abból a tudásból alig marad használható információ a hosszú távú memóriában.
 
-Részletek;
         </section>
       </div>
 
-      <div class="title"><a class="cta-button" href="https://www.facebook.com/LensationCrewMedia/">FOLLOW US</a></div>
+      <div class="title"><a target="_blank" class="cta-button" href="https://www.facebook.com/LensationCrewMedia/">FOLLOW US</a></div>
 
   <footer>
     <div class="text-block">
@@ -88,9 +86,9 @@ Részletek;
       </div>
       <div class="col2">
         <div class="icons-footer">
-        <a href="https://www.facebook.com/LensationCrewMedia/"><img class="icon" src="images/facebook.svg" alt="Facebook Link"></a>
-        <a href="https://www.youtube.com/channel/UC-JCgfargK5N_HqJWpax9Ag/videos"><img class="icon" src="images/youtube.svg" alt="YouTube Link"></a>
-        <a href="https://www.instagram.com/crewlensation/"><img class="icon" src="images/insta.svg" alt="Instagram Link"></a>
+        <a target="_blank" href="https://www.facebook.com/LensationCrewMedia/"><img class="icon" src="images/facebook.svg" alt="Facebook Link"></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UC-JCgfargK5N_HqJWpax9Ag/videos"><img class="icon" src="images/youtube.svg" alt="YouTube Link"></a>
+        <a target="_blank" href="https://www.instagram.com/crewlensation/"><img class="icon" src="images/insta.svg" alt="Instagram Link"></a>
         </div>
         <div class="nav-footer">
           <ul>
@@ -120,6 +118,56 @@ Részletek;
           sr.reveal('nav', {
             duration: 1000,
             origin: 'top',
+            scale: 1,
+            mobile: true,
+          });
+
+          sr.reveal('.headline', {
+            duration: 1000,
+            origin: 'bottom',
+            mobile: true,
+          });
+
+          sr.reveal('.content-holder', {
+            duration: 1000,
+            origin: 'top',
+            mobile: true,
+          });
+
+          sr.reveal('.photo-holder', {
+            duration: 1000,
+            origin: 'top',
+            mobile: true,
+          });
+
+          sr.reveal('.photo-holder', {
+            duration: 1000,
+            origin: 'top',
+            mobile: true,
+          });
+
+          sr.reveal('.title', {
+            duration: 1000,
+            origin: 'top',
+            mobile: true,
+          });
+
+          sr.reveal('.ppl-wrapper', {
+            duration: 1000,
+            origin: 'top',
+            mobile: true,
+          });
+
+          sr.reveal('.cta-button', {
+            duration: 1000,
+            origin: 'top',
+            mobile: true,
+          });
+
+          sr.reveal('footer', {
+            duration: 500,
+            origin: 'bottom',
+            scale: 1,
             mobile: true,
           });
 
